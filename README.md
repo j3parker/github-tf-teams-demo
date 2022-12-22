@@ -12,3 +12,5 @@ Demo of how you could use TF to maintain GitHub teams
       * `org2/`: Another hypothetical org.
   * `modules/`: This is where reusable modules go
     * `github-org-teams/`: This is the module that creates/owns the actual org team resources.
+
+Note that we [filter the users from the teams yml to only real org members](https://github.com/j3parker/github-tf-teams-demo/blob/main/terraform/modules/github-org-teams/main.tf#L18-L27). This prevents us from enrolling external people into the org after they've left. If you wanted to also support those then the yml should have a specific section for external collaborators. This has the consequence of silently ignoring team members that are invalid -- it would be possible to instead cause the build to fail if you wished.
