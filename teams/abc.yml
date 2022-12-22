@@ -1,0 +1,9 @@
+name: ABC
+
+members:
+  - janedoe
+  - johndoe
+
+orgs:
+  - org1
+  - org2

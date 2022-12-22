@@ -1,0 +1,9 @@
+name: DEF
+
+members:
+  - foo
+  - bar
+  - baz
+
+orgs:
+  - org1
